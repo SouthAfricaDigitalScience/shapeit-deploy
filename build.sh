@@ -27,9 +27,8 @@ else
   echo "continuing from previous builds, using source at " ${SRC_DIR}/${SOURCE_FILE}
 fi
 
-mkdir -p ${WORKSPACE}/${NAME}
-tar xzf  ${SRC_DIR}/${SOURCE_FILE} -C ${WORKSPACE}/${NAME}-${VERSION} --skip-old-files
-cd ${WORKSPACE}/${NAME}-${VERSION}
+tar xzf  ${SRC_DIR}/${SOURCE_FILE} -C ${WORKSPACE} --skip-old-files
+cd ${WORKSPACE}
 #there are some examples in the 'examples' directory - try this ?
 cd example
 ../bin/shapeit -B gwas -M genetic_map.txt -O gwas.phased --window 0.5
