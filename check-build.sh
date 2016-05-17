@@ -5,6 +5,8 @@ cd ${WORKSPACE}/example
 # run a few other tests...
 mkdir -p ${REPO_DIR}
 
+cd ${WORKSPACE}
+cp -rvf bin example ${REPO_DIR}
 mkdir -p modules
 (
 cat <<MODULE_FILE
