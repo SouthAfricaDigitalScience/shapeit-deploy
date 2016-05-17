@@ -26,3 +26,7 @@ setenv SHAPEIT_DIR           $::env(CVMFS_DIR)/$::env(SITE)/$::env(OS)/$::env(AR
 prepend-path PATH            $::env(SHAPEIT_DIR)/bin
 MODULE_FILE
 ) > ${BIOINFORMATICS_MODULES}/${NAME}/${VERSION}
+
+
+module avail ${NAME}
+module add ${NAME}
