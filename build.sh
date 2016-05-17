@@ -31,4 +31,4 @@ tar xzf  ${SRC_DIR}/${SOURCE_FILE} -C ${WORKSPACE} --skip-old-files
 cd ${WORKSPACE}
 #there are some examples in the 'examples' directory - try this ?
 cd example
-../bin/shapeit -B gwas -M genetic_map.txt -O gwas.phased --window 0.5 -thread 4
+../bin/shapeit -B gwas -M genetic_map.txt -O gwas.phased --window 0.5 --thread 4
